@@ -71,7 +71,7 @@ public class TicketService {
 
         ticket.setSlot(slotAssignmentStrategy.getSlot(gate,vehicleType));
 
-        ticket.setNumber("Ticket - " +ticket.getId());       //     Or generate a UUID
+        ticket.setNumber("Ticket - " +ticket.getId());       //     Or generate a UUID.
 
         return ticketRepo.saveTicket(ticket);
     }
